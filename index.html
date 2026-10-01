@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulia Nur Oktapiyani | Lifestyle Blog</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff8fb;
+            color: #4a3b40;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f8c8dc, #fce8f0);
+            padding: 25px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8d4967;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #5e414c;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #c05b88;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff8fb;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            color: #8d4967;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            color: #b85c83;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .hero p {
+            font-size: 17px;
+            color: #66545b;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #d783a6;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #b85c83;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #8d4967;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .about {
+            background-color: #fff0f5;
+        }
+
+        .about-container {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-container p {
+            margin-bottom: 20px;
+        }
+
+        .profile-card {
+            max-width: 700px;
+            margin: 30px auto 0;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            text-align: left;
+        }
+
+        .profile-card p {
+            margin-bottom: 10px;
+        }
+
+        .profile-card strong {
+            color: #a54f76;
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .blog-card {
+            background-color: white;
+            padding: 28px;
+            border-radius: 20px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .blog-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .blog-card h3 {
+            color: #a54f76;
+            margin-bottom: 12px;
+        }
+
+        .blog-card p {
+            color: #66545b;
+            font-size: 15px;
+        }
+
+        .contact {
+            background-color: #fff0f5;
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 10px;
+        }
+
+        .social {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #a54f76;
+        }
+
+        footer {
+            background-color: #8d4967;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            .blog-container {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <div class="logo">Aulia's Blog</div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Lifestyle</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm Aulia ♡</h1>
+
+            <h2>Welcome to My Lifestyle Blog</h2>
+
+            <p>
+                Tempat untuk berbagi cerita, pengalaman, dan hal-hal sederhana
+                dalam kehidupan sehari-hari. Mulai dari kehidupan mahasiswa,
+                beauty, fashion, self-care, hingga berbagai hal yang aku sukai.
+            </p>
+
+            <a href="#blog" class="button">Explore My Blog</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-container">
+            <p>
+                Halo! Aku <strong>Aulia Nur Oktapiyani</strong>, seorang mahasiswa
+                Manajemen Pendidikan yang sedang menjalani kehidupan perkuliahan
+                di UIN Syarif Hidayatullah Jakarta.
+            </p>
+
+            <p>
+                Blog ini dibuat sebagai ruang untuk berbagi cerita dan
+                pengalaman seputar lifestyle dengan cara yang sederhana,
+                personal, dan menyenangkan.
+            </p>
+
+            <div class="profile-card">
+                <p><strong>Nama:</strong> Aulia Nur Oktapiyani</p>
+                <p><strong>NIM:</strong> 1251100098</p>
+                <p><strong>Jurusan / Prodi:</strong> Manajemen Pendidikan</p>
+                <p><strong>Kampus:</strong> UIN Syarif Hidayatullah Jakarta</p>
+                <p><strong>Domisili:</strong> Bogor</p>
+                <p><strong>Email:</strong> aulianuroktapiyani@gmail.com</p>
+                <p><strong>Instagram:</strong> @aulianrpnn</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIFESTYLE BLOG -->
+    <section id="blog">
+        <h2 class="section-title">Lifestyle Corner</h2>
+
+        <div class="blog-container">
+
+            <div class="blog-card">
+                <div class="blog-icon">🎀</div>
+                <h3>Daily Life</h3>
+                <p>
+                    Cerita tentang keseharian, kehidupan sebagai mahasiswa,
+                    kegiatan kampus, dan pengalaman kecil yang menjadi bagian
+                    dari perjalanan hidup.
+                </p>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-icon">💄</div>
+                <h3>Beauty</h3>
+                <p>
+                    Berbagi pengalaman seputar makeup, skincare, dan berbagai
+                    hal yang berkaitan dengan self-care.
+                </p>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-icon">👗</div>
+                <h3>Fashion</h3>
+                <p>
+                    Inspirasi outfit, warna pakaian, dan gaya berpakaian
+                    sederhana yang nyaman digunakan sehari-hari.
+                </p>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-icon">☕</div>
+                <h3>College Life</h3>
+                <p>
+                    Cerita mengenai kehidupan perkuliahan, tugas, organisasi,
+                    teman, dan pengalaman menjadi mahasiswa.
+                </p>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-icon">🌷</div>
+                <h3>Self Care</h3>
+                <p>
+                    Hal-hal sederhana untuk menjaga diri, menikmati waktu
+                    sendiri, dan menciptakan keseharian yang lebih menyenangkan.
+                </p>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-icon">📖</div>
+                <h3>My Stories</h3>
+                <p>
+                    Kumpulan cerita, pengalaman, dan pembelajaran yang aku
+                    dapatkan dari berbagai perjalanan kehidupan.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Let's Connect ♡</h2>
+
+        <p>
+            Punya cerita atau ingin berkenalan?
+        </p>
+
+        <p>
+            Email: aulianuroktapiyani@gmail.com
+        </p>
+
+        <p class="social">
+            Instagram: @aulianrpnn
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Aulia Nur Oktapiyani. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
